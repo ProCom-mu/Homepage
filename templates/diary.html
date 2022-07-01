@@ -1,0 +1,11 @@
+{% for i in diary_list %}
+<p>{{i.title}}</p>
+{% endfor %}
+
+<form method="post" action="{% url 'diary:diary_top' %}">
+    {% csrf_token %}
+    <input name="title" type="text" placeholder="Title">
+    <input name="subtitle" type="text" placeholder="Subtitle">
+    <textarea name="body" cols="30" rows="10" placeholder="Body"></textarea>
+    <button type="submit">投稿</button>
+</form>
