@@ -1,17 +1,31 @@
-<!-- <h1>Hello, everyone!</h1>
-<p>We are ProCom!</p>
-<p>I'm too hungry to study.</p>
-<a href="http://www.miyazaki-u.ac.jp/">Click Here</a> -->
-
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
     <title>ProCom</title>
 </head>
 <body>
-    <h1>ProComへようこそ</h1>
-    <p>私たちはコンピュータ開発に関する知識・技能を養うために活動しています。</p>
+    <header>
+        <ul class="header_list">
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">CREATE</a></li>
+            <li><a href="">SCHED</a></li>
+            <li><a href="">CONTACT</a></li>
+        </ul>
+    </header>
+    <div class="base_container">
+        <div class="left_container">
+            <p>abc</p>
+        </div>
+        <div class="center_container">
+            <p>ABCDEFG</p>
+        </div>
+        <div class="right_container">
+            <p>xyz</p>
+        </div>
+    </div>
 </body>
 </html>
