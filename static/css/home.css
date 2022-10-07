@@ -59,17 +59,15 @@ body{
     width: 100%;
     min-height: 1000px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
     margin: 0;
     padding: 0;
 }
 
 .center_container{
     width: 80%;
-    height: 100%;
-    background: #165e83;
+    min-height: 100%;
+    background: #114A6D;
 }
 
 .left_container{
@@ -78,4 +76,43 @@ body{
 
 .right_container{
     flex: 1;
+}
+
+.contents_container_1{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.sentence_1{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding: 5em;
+}
+
+.sentence_1 h1{
+    margin: 1em;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.sentence_1 p{
+    color: white;
+    font-size: 1em;
+}
+
+.hedgehog{
+    height: auto;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.hedgehog > img{
+    height: 15em;
+    width: 15em;
 }
