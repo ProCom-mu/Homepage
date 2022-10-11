@@ -65,8 +65,8 @@ body{
 }
 
 .center_container{
-    width: 80%;
-    min-height: 100%;
+    width: 64%;
+    min-height: 100vh;
     background: #114A6D;
 }
 
@@ -79,40 +79,63 @@ body{
 }
 
 .contents_container_1{
-    height: 100%;
     display: flex;
-    align-items: center;
+    justify-items: center;
+    padding-bottom: 1em;
 }
 
-.sentence_1{
+.contents_container_2{
     display: flex;
     flex-direction: column;
-    width: 50%;
-    height: 100%;
-    padding: 5em;
 }
 
-.sentence_1 h1{
-    margin: 1em;
+.ariticle{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.ariticle h1{
+    margin: 1em 1em 0 1em;
     color: white;
     font-weight: bold;
     font-size: 3em;
 }
 
-.sentence_1 p{
+.ariticle p{
+    margin: 2em 0 0 3em;
     color: white;
     font-size: 1em;
 }
 
-.hedgehog{
-    height: auto;
-    width: 50%;
+.paragragh_1{
+    padding: 5em 0 13em 5em;
+}
+
+.paragragh_2{
+    padding: 0 0 5em 5em;
+}
+.hedgehog_right{
+    width: 40%;
     display: flex;
-    justify-content: flex-start;
+    justify-items: flex-start;
     align-items: flex-end;
 }
 
-.hedgehog > img{
-    height: 15em;
-    width: 15em;
+.hedgehog_left{
+    width: 50%;
+    padding: 0 0 5em 10em;
+    display: flex;
+    justify-items: flex-start;
+    align-items: flex-start;
+}
+
+.hedgehog_right > img{
+    height: 16em;
+    width: 17em;
+}
+
+.hedgehog_left > img{
+    height: 10em;
+    width: 23em;
 }
